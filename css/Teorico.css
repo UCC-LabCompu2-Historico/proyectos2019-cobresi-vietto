@@ -1,0 +1,78 @@
+/* Se aplica a toda la pagina */
+body{
+    font-family: Tahoma;
+text-align: left; }
+
+/* Configuracion para todos los cuadros que contienen info. */
+div{
+    border: 5px solid #9B3232;
+    margin: 57px;
+    padding: 5px 30px;
+    font-size: 19px; }
+
+/*Electrostatica*/
+#tituloPrincipal{
+    color: #154385;
+    text-decoration: underline;
+    font-size: 47px; }
+#tituloDefinicion{
+    color: black;
+    text-decoration: underline;
+    font-size: 25px; }
+
+/*Cargas electricas*/
+#tituloCargas{
+    color: #C48C15;
+    text-decoration: underline;
+    font-size: 37px; }
+
+/*Configuracion para todas las tablas*/
+table, tr, td, th{
+    border-collapse: collapse;
+    border: 2px solid #000000;
+    text-align: center; }
+
+/* Propiedades Cargas Electricas */
+#titulopropiedades{
+    color: #C48C15;
+    text-decoration: underline;
+    font-size: 25px; }
+.propiedades h3{
+    color: black;
+    text-decoration: underline;
+    font-size: 21px; }
+
+/* Leyes Electrostaticas */
+#tituloLeyes{
+    color: #154385;
+    text-decoration: underline;
+    font-size: 37px; }
+.ley h3{
+    color: black;
+    text-decoration: none;
+    font-size: 25px; }
+
+#datos{
+    color: black;
+    text-decoration: underline; }
+
+/* Campo Electrico */
+#tituloCampo{
+    color:  #f44336;
+    text-decoration: underline;
+    font-size: 37px; }
+/* Intensidad del Campo */
+#tituloInt{
+    color: #3E9CC2;
+    text-decoration: underline;
+    font-size: 27px; }
+.int img{
+    width 150px;
+    height: 150px; }
+
+/* Lineas de Fuerza */
+#tituloLineas{
+    color: #3E9CC2;
+    text-decoration: underline;
+    font-size: 27px; }
+

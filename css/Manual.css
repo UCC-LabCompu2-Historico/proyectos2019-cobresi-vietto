@@ -1,0 +1,43 @@
+/* Se aplica a toda la pagina */
+body{
+    font-family: Tahoma;
+    text-align: left; }
+/* Configuracion para todos los cuadros que contienen info. */
+div{
+    border: 5px solid #324D9B;
+    margin: 57px;
+    padding: 5px 30px;
+    font-size: 20px; }
+
+/*Instrucciones*/
+#tituloPrincipal{
+    color: #D15600;
+    text-decoration: underline;
+    font-size: 47px; }
+.uno img{
+    width 470px;
+    height: 470px; }
+
+/*Opciones de Uso*/
+#tituloOpcionesl{
+    color: #6D0505;
+    text-decoration: underline;
+    font-size: 25px; }
+
+/*Boton Reset*/
+#tituloReset{
+    color: #6D0505;
+    text-decoration: underline;
+    font-size: 25px; }
+
+/*Seleccionar cargas*/
+#tituloTipoCargas{
+    color: #6D0505;
+    text-decoration: underline;
+    font-size: 25px; }
+
+/*Links*/
+#titulolinks{
+    color: #6D0505;
+    text-decoration: underline;
+    font-size: 25px; }
