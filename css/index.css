@@ -1,15 +1,16 @@
 /* Se aplica a toda la pagina */
-body{
+body {
     font-family: Tahoma;
     background: black;
-    color: white}
-html, body{
-    height:100%;
+    color: white
+}
+
+html, body {
     margin: 0px;
 }
 
 /* Cuadro de opciones */
-.Opciones{
+.Opciones {
     position: fixed;
     top: 120px;
     right: 30px;
@@ -18,97 +19,102 @@ html, body{
     border: 7px solid #fffafa;
     color: #C1A841;
     border-radius: 7px;
-    font-size: 28px; }
-.Opciones input{
+    font-size: 28px;
+}
+
+.Opciones input {
     width: 15px;
-    height: 15px; }
+    height: 15px;
+}
 
 /* Boton Reset */
-.Reiniciar{
+.Reiniciar {
     width: 90px;
     height: 90px;
     border-radius: 50px;
     color: white;
     background: #ffaf4a;
     position: fixed;
-    top:730px;
+    top: 730px;
     right: 30px;
     padding: 5px 30px;
     background-image: url("../imagenes/img11.jpg"); /* imagen del boton */
-    background-size: cover;}
+    background-size: cover;
+}
 
 /* Cuadro que contiene el tirulo principal, los links y el logo UCC */
-.info{
+.info {
     position: fixed;
-    top: 850px;
+    bottom: 0px;
     right: 0;
-    width: 1900px;
+    width: 100%;
     height: 100px;
     border: 7px solid #fffafa;
     border-radius: 7px;
     font-size: 25px;
-    background: #134285; }
-img{
+    background: #134285;
+}
+
+.info img {
     width: 165px;
     height: 100px;
-    padding: 0px 1740px; }
-/* Titulo Principal*/
-#tituloLAB{
-    color: white;
-    position: fixed;
-    left: 0;
-    top: 850px;
-    padding: 0px 30px; }
+    float: right;
+}
 
+/* Titulo Principal*/
+#tituloLAB {
+    color: white;
+    padding: 0px 30px;
+    display: inline-block;
+}
+
+.info nav{
+    display: inline-block;
+    float: right;
+}
 
 /* Link Teorico */
 a.uno:link, a:visited {
     background-color: #f44336;
     color: white;
-    position: fixed;
     text-align: center;
-    top: 857px;
-    right: 470px;
     text-decoration: none;
     display: inline-block;
-    padding: 29px 97px;
+    padding: 29px 50px;
     font-size: 35px;
 }
+
 a.uno:hover, a:active {
     background-color: red;
 }
+
 /* Link Manual */
 a.dos:link, a:visited {
     background-color: #f44336;
     color: white;
-    position: fixed;
     text-align: center;
-    top: 857px;
-    right: 167px;
     text-decoration: none;
     display: inline-block;
     padding: 29px 97px;
     font-size: 35px;
 }
+
 a.dos:hover, a:active {
     background-color: red;
 }
 
-
 /* Cuadro cargas */ /* Esta vacio por que los datos que contienen deben ser programados con java */
-.cargas{
-    position: fixed;
-    right: 40%;
-    top: 684px;
+.cargas {
     width: 453px;
     height: 108px;
     border: 9px solid #fffafa;
-    color:white;
+    color: white;
     border-radius: 7px;
     font-size: 20px;
-    margin: auto;}
+    margin: 350px auto 120px auto;
+}
 
-.numero{
+.numero {
     position: fixed;
     top: 417px;
     right: 30px;
@@ -121,14 +127,18 @@ a.dos:hover, a:active {
 
 }
 
-.numero input{
+.numero input {
     margin: 10px 0 0 10px;
     width: 60px;
     height: 20px;
 }
+
 /* Canvas (Por el momento vacio) */
-#myCanvas{
-    width:0%;
-    height:0%;
+#myCanvas {
+    width: 300px;
+    height: 300px;
     z-index: 12;
+    background: white;
 }
+
+

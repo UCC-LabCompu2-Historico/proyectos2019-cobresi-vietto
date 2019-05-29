@@ -9,38 +9,39 @@
 <body>
 <header>
     <h1 id="tituloPrincipal">Campos y Cargas</h1>
-    <section>
+    <canvas id="myCanvas">
+
+    </canvas>
+    <div>
 
         <div class="Opciones">
-            <p ><input type="checkbox" name="materia1" value="Campo Electrico"> Campo Electrico</p>
-            <p style="line-height:10pt;"><input type="checkbox" name="materia2" value="Mostrar solo direccion "> Mostrar solo direccion</p>
+            <p><input type="checkbox" name="materia1" value="Campo Electrico"> Campo Electrico </p>
+            <p style="line-height:10pt;"><input type="checkbox" name="materia2" value="Mostrar solo direccion "> Mostrar
+                solo direccion</p>
             <p style="line-height:10pt;"><input type="checkbox" name="materia1" value="Voltaje"> Voltaje </p>
             <p><input type="checkbox" name="materia1" value="Grilla"> Grilla </p>
         </div>
 
-        <button class="Reiniciar" type="button"> </button>
+        <button class="Reiniciar" type="button"></button>
 
         <div class="info">
-            <nav> <a class="uno" href="html/Teorico.html">Teorico</a> </nav>
-            <nav> <a class="dos" href="html/Manual.html">Manual</a> </nav>
             <h3 id="tituloLAB">Laboratorio de Computacion II</h3>
-            <img src="imagenes/img2.jpg"
+            <img src="imagenes/img2.jpg">
+            <nav><a class="dos" href="html/Manual.html">Manual</a></nav>
+            <nav><a class="uno" href="html/Teorico.html">Teorico</a></nav>
         </div>
 
         <div class="numero">
-            <h3 > Ingrese valor de la carga 1</h3>
-          <input  type="number" name="points" min="0" max="100" step="0.5" value="0">
+            <h3> Ingrese valor de la carga 1</h3>
+            <input type="number" name="points" min="0" max="100" step="0.5" value="0">
             <h3>Ingrese valor de la carga 2</h3>
-            <input  type="number" name="points" min="0" max="100" step="0.5" value="0">
+            <input type="number" name="points" min="0" max="100" step="0.5" value="0">
         </div>
 
-<div class="cargas">
-</div>
+        <div class="cargas">
+        </div>
 
+    </div>
 </header>
-<canvas id="myCanvas">
-    Your browser does not support the HTML5 canvas tag.
-</canvas>
-</section>
 </body>
 </html>
