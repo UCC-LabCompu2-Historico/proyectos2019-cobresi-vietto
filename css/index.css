@@ -9,12 +9,29 @@ html, body {
     margin: 0px;
 }
 
+
+h1{
+    font-size: 37px;
+}
+h1:hover{
+    animation: neon2 2s ease-in-out infinite alternate;
+}
+
+@keyframes neon2 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+}
+
 /* Cuadro de opciones */
 .Opciones {
-    position: fixed;
-    top: 120px;
+    position: absolute;
+    top: 75px;
     right: 30px;
-    width: 350px;
+    width: 355px;
     height: 260px;
     border: 7px solid #fffafa;
     color: #C1A841;
@@ -34,7 +51,7 @@ html, body {
     border-radius: 50px;
     color: white;
     background: #ffaf4a;
-    position: fixed;
+    position: absolute;
     top: 730px;
     right: 30px;
     padding: 5px 30px;
@@ -105,6 +122,7 @@ a.dos:hover, a:active {
 
 /* Cuadro cargas */ /* Esta vacio por que los datos que contienen deben ser programados con java */
 .cargas {
+
     width: 453px;
     height: 108px;
     border: 9px solid #fffafa;
@@ -115,16 +133,16 @@ a.dos:hover, a:active {
 }
 
 .numero {
-    position: fixed;
-    top: 417px;
+    position: absolute;
+    top: 370px;
     right: 30px;
-    width: 350px;
-    height: 250px;
+    width: 355px;
+    height: 315px;
     border: 7px solid #fffafa;
     color: #C1A841;
     border-radius: 7px;
     font-size: 20px;
-
+    text-align: center;
 }
 
 .numero input {
@@ -133,12 +151,8 @@ a.dos:hover, a:active {
     height: 20px;
 }
 
-/* Canvas (Por el momento vacio) */
-#myCanvas {
-    width: 300px;
-    height: 300px;
-    z-index: 12;
-    background: white;
-}
+
+
+
 
 
