@@ -5,9 +5,10 @@
     <title>Campos y Cargas</title>
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="misFunciones.js"></script>
 
 </head>
-<body>
+<body  onload>
 <header>
     <h1>Campos y Cargas</h1>
     <div id="Contenedor">
@@ -38,13 +39,13 @@
             <nav><a class="uno" href="html/Teorico.html">Teorico</a></nav>
         </div>
 
-        <div class="numero" name="Camp">
+        <form class="numero" name="Camp">
             <h4>Fureza del Campo Electrico:</h4>
             <p>Ingrese Carga 1:<input id="num1" type="text" name="carga1" onchange="fuerza()"> [C]</p>
             <p>Ingrese Carga 2:<input id="num2" type="text" name="carga2" onchange="fuerza()"> [C]</p>
             <p>Ingrese Distancia:<input id="num3" type="text" name="distancia" onchange="fuerza()"> [m]</p>
             <p>F: <input id="total" type="text" name="fuerzat" onchange="fuerza()"> [N] </p>
-        </div>
+        </form>
 
 
         <div class="cargas">
