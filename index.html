@@ -8,26 +8,18 @@
     <script type="text/javascript" src="misFunciones.js"></script>
 
 </head>
-<body  onload>
+<body  onload="grilla()">
 <header>
     <h1>Campos y Cargas</h1>
-    <div id="Contenedor">
-        <div id="contenedorCanvas">
-            <canvas id="canvas1" width="600" height="580">
-                Tu navegador no soporta canvas
-            </canvas>
-        </div>
-        <div id="herramientas">
-            <input type="range" id="sizeCuadros" value="20" min="5" max="100">
-        </div>
-    </div>
+    <canvas id="myCanvas" class="ejer" width="850" height="770" >
+    Tu navegador no soporta el tag de HTML5 canvas.
+    </canvas>
 
-        <div class="Opciones">
-            <p><input type="checkbox" name="materia1" value="Campo Electrico"> Campo Electrico </p>
-            <p style="line-height:10pt;"><input type="checkbox" name="materia2" value="Mostrar solo direccion "> Mostrar
-                solo direccion</p>
-            <p style="line-height:10pt;"><input type="checkbox" name="materia1" value="Voltaje"> Voltaje </p>
-            <p><input type="checkbox" name="materia1" value="Grilla"> Grilla </p>
+
+    <div class="Opciones">
+            <p><input type="checkbox" name="materia1" value="Campo Electrico" checked> Campo Electrico </p>
+            <p><input type="checkbox" name="materia1" value="Voltaje"> Voltaje </p>
+            <p><input type="checkbox" name="materia1" value="Grilla" onclick="togglear(this)" checked> Grilla </p>
         </div>
 
         <button class="Reiniciar" type="button"></button>
@@ -48,10 +40,6 @@
         </form>
 
 
-        <div class="cargas">
-        </div>
-
-    </div>
 </header>
 </body>
 </html>

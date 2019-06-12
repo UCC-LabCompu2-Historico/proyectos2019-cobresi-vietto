@@ -19,21 +19,21 @@ h1:hover{
 
 @keyframes neon2 {
     from {
-        text-shadow: 0 0 10px #a80e11, 0 0 20px #a80e11, 0 0 30px #a80e11, 0 0 40px #a80e11, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+        text-shadow: 0 0 10px #f4fff8, 0 0 20px #f4fff8, 0 0 30px #f4fff8, 0 0 40px #f4fff8, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
     }
     to {
-        text-shadow: 0 0 5px #a80e11, 0 0 10px #a80e11, 0 0 15px #a80e11, 0 0 20px #a81026, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+        text-shadow: 0 0 5px #f4fff8, 0 0 10px #f4fff8, 0 0 15px #f4fff8, 0 0 20px #f4fff8, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
     }
 }
 
 /* Cuadro de opciones */
 .Opciones {
     position: absolute;
-    top: 75px;
-    right: 30px;
+    top: 90px;
+    right: 18px;
     width: 355px;
-    height: 260px;
-    border: 7px solid #fffafa;
+    height: 220px;
+    border: 5px solid #fffafa;
     color: #C1A841;
     border-radius: 7px;
     font-size: 28px;
@@ -53,10 +53,11 @@ h1:hover{
     background: #ffaf4a;
     position: absolute;
     top: 730px;
-    right: 30px;
+    right: 18px;
     padding: 5px 30px;
     background-image: url("../imagenes/img11.jpg"); /* imagen del boton */
     background-size: cover;
+    margin: 0px 0px 121px 0px;
 }
 
 /* Cuadro que contiene el tirulo principal, los links y el logo UCC */
@@ -112,7 +113,7 @@ a.dos:link, a:visited {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    padding: 29px 97px;
+    padding: 29px 50px;
     font-size: 35px;
 }
 
@@ -120,25 +121,13 @@ a.dos:hover, a:active {
     background-color: red;
 }
 
-/* Cuadro cargas */ /* Esta vacio por que los datos que contienen deben ser programados con java */
-.cargas {
-
-    width: 453px;
-    height: 108px;
-    border: 9px solid #fffafa;
-    color: white;
-    border-radius: 7px;
-    font-size: 20px;
-    margin: 350px auto 120px auto;
-}
-
 .numero {
     position: absolute;
-    top: 370px;
-    right: 30px;
+    top: 335px;
+    right: 18px;
     width: 355px;
     height: 315px;
-    border: 7px solid #fffafa;
+    border: 5px solid #fffafa;
     color: #C1A841;
     border-radius: 7px;
     font-size: 20px;
@@ -150,6 +139,19 @@ a.dos:hover, a:active {
     width: 60px;
     height: 20px;
 }
+
+.ejer{
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    border:5px solid#fffaf3;
+    border-radius: 7px;
+    background: rgb(0, 0, 0);
+    width: 850px;
+    height: 770px;
+    margin: 0px 0px 145px 0px;
+}
+
 
 
 
