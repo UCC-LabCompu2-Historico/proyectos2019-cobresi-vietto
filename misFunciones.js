@@ -38,3 +38,21 @@ function togglear(el){
         ctx.clearRect(0,0,canvas.width,canvas.height);
     }
 }
+
+
+function circulos() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d")
+
+    ctx.fillStyle = "#E61C1C";
+    ctx.beginPath();
+    ctx.arc(47, canvas.height/2, 28,0,2*Math.PI);
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.fillStyle = "#1C5CE6";
+    ctx.beginPath();
+    ctx.arc(47, 300, 28,0,2*Math.PI);
+    ctx.fill();
+    ctx.closePath();
+}
