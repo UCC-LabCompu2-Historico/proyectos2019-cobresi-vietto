@@ -111,13 +111,13 @@ function circulos() {
 
     ctx.fillStyle = "#E61C1C";
     ctx.beginPath();
-    ctx.arc(cargaP.x, cargaP.y, 28, 0, 2 * Math.PI);
+    ctx.arc(cargaN.x,cargaN.y, 28, 0, 2 * Math.PI);
     ctx.fill();
     ctx.closePath();
 
     ctx.fillStyle = "#1C5CE6";
     ctx.beginPath();
-    ctx.arc(cargaN.x, cargaN.y, 28, 0, 2 * Math.PI);
+    ctx.arc(cargaP.x, cargaP.y, 28, 0, 2 * Math.PI);
     ctx.fill();
     ctx.closePath();
 }
