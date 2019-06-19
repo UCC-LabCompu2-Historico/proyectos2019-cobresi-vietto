@@ -24,7 +24,7 @@ h1:hover{
 }
 
 h1{
-    color: ##B6FF00;;
+    color: #B6FF00;;
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;
     animation: neon1 1.5s ease-in-out infinite alternate;
@@ -172,6 +172,22 @@ a.dos:hover, a:active {
     text-align: center;
 }
 
+
+
+.canvas2{
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    width: 850px;
+    height: 770px;
+}
+
+.ejer2{
+    border:5px solid#fffaf3;
+    border-radius: 7px;
+    margin: 0px 0px 145px 0px;
+}
+
 .canvas{
     position: absolute;
     top: 90px;
@@ -179,6 +195,7 @@ a.dos:hover, a:active {
     width: 850px;
     height: 770px;
 }
+
 .numero input {
     margin: 10px 0 0 10px;
     width: 60px;
@@ -193,8 +210,8 @@ a.dos:hover, a:active {
 }
 
 .cargas {
-    position: absolute;
-    bottom: 100px;
+    position: fixed;
+    top: 735px;
     width: 290px;
     height:55px;
     border: 7px solid #fffafa;
