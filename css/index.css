@@ -2,7 +2,7 @@
 body {
     font-family: Tahoma;
     background: black;
-    color: white
+    color: white;
 }
 
 html, body {
@@ -12,6 +12,7 @@ html, body {
 h1{
     font-size: 37px;
 }
+
 h1:hover{
     text-decoration: none;
     -webkit-transition: all 0.5s;
@@ -35,7 +36,7 @@ h1:hover {
     animation: none;
 }
 
-/*
+
 @keyframes neon1 {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
@@ -62,7 +63,7 @@ h1:hover {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
     }
 }
-*/
+
 /* Cuadro de opciones */
 .Opciones {
     position: absolute;
@@ -191,9 +192,21 @@ a.dos:hover, a:active {
     margin: 0px 0px 145px 0px;
 }
 
+.cargas {
+    position: absolute;
+    bottom: 100px;
+    width: 290px;
+    height:55px;
+    border: 7px solid #fffafa;
+    margin: 0px 0px 20px 150px;
+    background: white;
+    border-radius: 7px;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
 
-
-
-
-
-
+.cargas input{
+    width: 25px;
+    height: 25px;
+}
