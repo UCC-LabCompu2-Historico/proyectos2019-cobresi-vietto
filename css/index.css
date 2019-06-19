@@ -35,7 +35,7 @@ h1:hover {
     animation: none;
 }
 
-
+/*
 @keyframes neon1 {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
@@ -62,7 +62,7 @@ h1:hover {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
     }
 }
-
+*/
 /* Cuadro de opciones */
 .Opciones {
     position: absolute;
@@ -171,6 +171,13 @@ a.dos:hover, a:active {
     text-align: center;
 }
 
+.canvas{
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    width: 850px;
+    height: 770px;
+}
 .numero input {
     margin: 10px 0 0 10px;
     width: 60px;
@@ -178,14 +185,9 @@ a.dos:hover, a:active {
 }
 
 .ejer{
-    position: absolute;
-    top: 90px;
-    left: 10px;
     border:5px solid#fffaf3;
     border-radius: 7px;
     background: rgb(0, 0, 0);
-    width: 850px;
-    height: 770px;
     margin: 0px 0px 145px 0px;
 }
 
