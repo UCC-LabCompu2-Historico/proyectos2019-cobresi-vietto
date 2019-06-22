@@ -15,7 +15,7 @@ function fuerza() {
 }
 function dibujarTodo(event) {
     var sel = document.getElementById("cargaMas");
-    if (event && event.buttons == 1) {
+    if (event && event.button == 1) {
         if (sel.checked) {
             cargaP.x = event.offsetX;
             cargaP.y = event.offsetY;
