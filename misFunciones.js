@@ -3,7 +3,7 @@ var cargaP = {
     y: 28
 };
 var cargaN = {
-    x: 150,
+    x: 250,
     y: 28
 };
 
@@ -25,23 +25,36 @@ function dibujarTodo(event) {
         }
     }
 
-    superFuncion();
+    var canvas = document.getElementById("myCanvas2");
+    var ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+
+    var cir = document.getElementById("isCirculos");
+    if (cir.checked) {
+        circulos();
+        superFuncion();
+
+    }else{
+        circulos();
+
+    }
     var el = document.getElementById("isGrilla");
     if (el.checked) {
         grilla();
+    }else{
+
     }
 
-    circulos();
+
 }
 
 
-function superFuncion() {
+function superFuncion(luz) {
 
     var canvas = document.getElementById("myCanvas2");
     var ctx = canvas.getContext("2d");
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     var r = 0.0;
     var g = 0;
@@ -56,7 +69,7 @@ function superFuncion() {
 
             distancia = Math.sqrt((i - cargaN.x) * (i - cargaN.x) + (j - cargaN.y) * (j - cargaN.y));
             r = ( 9E9 * Number(document.Camp.carga2.value) ) / (distancia );
-            if (r > max && r !== Infinity)
+            if (r > max && r != Infinity)
                 max = r;
 
             r = r * 0.01;
