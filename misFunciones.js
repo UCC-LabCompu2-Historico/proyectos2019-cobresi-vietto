@@ -15,7 +15,7 @@ function fuerza() {
 }
 function dibujarTodo(event) {
     var sel = document.getElementById("cargaMas");
-    if (event && event.button == 1) {
+    if (event && event.buttons == 1) {
         if (sel.checked) {
             cargaP.x = event.offsetX;
             cargaP.y = event.offsetY;
@@ -56,7 +56,7 @@ function superFuncion() {
 
             distancia = Math.sqrt((i - cargaN.x) * (i - cargaN.x) + (j - cargaN.y) * (j - cargaN.y));
             r = ( 9E9 * Number(document.Camp.carga2.value) ) / (distancia );
-            if (r > max && r != Infinity)
+            if (r > max && r !== Infinity)
                 max = r;
 
             r = r * 0.01;
