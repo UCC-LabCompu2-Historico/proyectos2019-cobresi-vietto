@@ -1,18 +1,31 @@
+/* Declaracion de las variables de las cargas, declarando
+la posicion inicial en la que se encuentran en el canvas. */
 var cargaP = {
     x: 100,
-    y: 28
+    y: 250
 };
 var cargaN = {
-    x: 250,
-    y: 28
+    x: 100,
+    y: 400
 };
 
+
+
+/* Funcion "fuerza", a traves de calculos matematicos, calcula la fuerza del campo electrico,
+ingresando el valor de las dos cargas y la distancia aproximada entre ellas */
 function fuerza() {
     console.log(document.Camp.carga1.value);
     console.log(document.Camp.carga2.value);
     console.log(document.Camp.distancia.value);
     document.Camp.fuerzat.value = ( 9 * Math.pow(10, 9) * Number(document.Camp.carga1.value) * Number(document.Camp.carga2.value) ) / ( Number(document.Camp.distancia.value) * Number(document.Camp.distancia.value) );
 }
+
+
+
+
+
+/*Funcion "dibujarTodo", permite interactuar con los checkbox para poder quitar o colocar la grilla, y realizar
+lo mismo con el efecto de luz en las cargas cuando se desee*/
 function dibujarTodo(event) {
     var sel = document.getElementById("cargaMas");
     if (event && event.buttons == 1) {
@@ -45,16 +58,17 @@ function dibujarTodo(event) {
     }else{
 
     }
-
-
 }
 
 
-function superFuncion(luz) {
 
+
+/* Funcion superFuncion(luz), esta permite generar un efecto
+ de luz a partir de un degradez de los colores de cada carga cuyo radio de brillo dependera
+ del valor de la mism carga*/
+function superFuncion(luz) {
     var canvas = document.getElementById("myCanvas2");
     var ctx = canvas.getContext("2d");
-
 
     var r = 0.0;
     var g = 0;
@@ -69,7 +83,7 @@ function superFuncion(luz) {
 
             distancia = Math.sqrt((i - cargaN.x) * (i - cargaN.x) + (j - cargaN.y) * (j - cargaN.y));
             r = ( 9E9 * Number(document.Camp.carga2.value) ) / (distancia );
-            if (r > max && r != Infinity)
+            if (r > max && r !== Infinity)
                 max = r;
 
             r = r * 0.01;
@@ -89,18 +103,16 @@ function superFuncion(luz) {
             }
 
         }
-
-
 }
 
+
+
+/* Funcion grilla, dibuja la grilla sobre el canvas, a traves de los valores en x e y
+que se la asigna a cada linea que mediante un bucle for esta dibuja. Adaptada a las medidas del mismco canvas */
 function grilla() {
     var canvas = document.getElementById("myCanvas2");
     var ctx = canvas.getContext("2d");
-
-
-
     ctx.fillStyle = "black";
-
     ctx.beginPath();
 
     for (var i = 0; i < canvas.width; i = i + 10) {
@@ -118,6 +130,10 @@ function grilla() {
 }
 
 
+
+
+/* Funcion circulos, se encarga de graficar los dos unicos circulos que aparecen en el canvas, de color azul y rojo
+ respectivamente con el fin de representar la polaridad de las cargas */
 function circulos() {
     var canvas2 = document.getElementById("myCanvas2");
     var ctx = canvas2.getContext("2d")
