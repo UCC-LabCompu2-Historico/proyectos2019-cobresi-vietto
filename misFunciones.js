@@ -1,8 +1,8 @@
 /*
--Declaracion de las variables de las cargas, declarando la posicion
+* Declaracion de las variables de las cargas, declarando la posicion
 inicial con respecto a X e Y en la que se encuentran en el canvas.
--cargaP: carga positiva(azul)
--cargaN: carga negaiva (rojo)  */
+* @param cargaN
+* @param cargaP  */
 var cargaP = {
     x: 100,
     y: 250
@@ -15,13 +15,13 @@ var cargaN = {
 
 
 /*
--Funcion "fuerza", a traves de calculos matematicos, calcula la fuerza del campo electrico,
-previamente el usuario ingresa el valor de las dos cargas y la distancia aproximada entre ellas
-variables:
--carga1: valor de la carga postiva
--carga2: valor de la carga negativa
--distancia: valor de la distancia aprox
--con Math.pow se calcula la constante de coulomb ( 9x10^9)  */
+*A traves de calculos matematicos, calcula la fuerza del campo electrico,
+previamente el usuario ingresa el valor de las dos cargas y la distancia aproximada entre ellas.
+* @method function fuerza
+* @param carga1
+* @param carga2
+* @param distancia
+* @return fuerzat   */
 function fuerza() {
     console.log(document.Camp.carga1.value);
     console.log(document.Camp.carga2.value);
@@ -34,13 +34,16 @@ function fuerza() {
 
 
 /*
--Funcion "dibujarTodo", permite interactuar con los checkbox para poder quitar o colocar la grilla, y realizar
-lo mismo con el efecto de luz en las cargas cuando se desee.
--Cuando el checkbox esta seleccionado envia un valor 1, lo cual reliza las acciones determinadas, en este caso mostrar la grilla
-y el efecto luz, de lo contrario, si no esta seleccionado envia 0 y se cancela la accion.
--Se utilizan las mismas variables cargaP y cargaN.
--Se llaman las funciones superFuncion() y circulos(), para controlar el efecto de luz.
--Se llama a la funcion grilla() para insertar la grilla en el canvas o quitarla.     */
+*Permite interactuar con los checkbox para poder quitar o colocar la grilla, y realizar
+lo mismo con el efecto de luz en las cargas cuando se desee. Cuando el checkbox esta seleccionado envia un valor 1, lo cual reliza las acciones
+determinadas, en este caso mostrar la grilla y el efecto luz, de lo contrario, si no esta seleccionado envia 0 y se cancela la accion.
+* @method function dibujarTodo
+* @param sel
+* @param cir
+* @param el
+* @return function superFuncion
+* @return function circulos
+* @return function grilla   */
 function dibujarTodo(event) {
     var sel = document.getElementById("cargaMas");
     if (event && event.buttons == 1) {
@@ -79,13 +82,16 @@ function dibujarTodo(event) {
 
 
 /*
--Funcion superFuncion(luz), esta permite generar un efecto de luz a partir de un degradez
-de los colores de cada carga cuyo radio de brillo dependera del valor de la misma carga.
--Las variables r, g, b, a permiten realizar el degradez de color, cada una tiene un nivel de intencidad diferente.
--El color de estas dependera del color de las variables cargaP y cargaN.
--Se calcula la distancia y el radio en el cual de graficara el color, en el cual ira desde la carga misma donde el color
-sera mas fuerte, hasta el limite calculado donde el color sera reducido.
--Cuando las cargas se juntan los colores se mezaclan.          */
+* Esta permite generar un efecto de luz a partir de un degradez de los colores de cada carga cuyo
+radio de brillo dependera del valor de la misma carga. El color de estas dependera del color de las variables cargaP y cargaN.
+Se calcula la distancia y el radio en el cual de graficara el color, en el cual ira desde la carga misma donde el color sera
+mas fuerte, hasta el limite calculado donde el color sera reducido. Cuando las cargas se juntan los colores se mezaclan.
+* @method function superFuncion
+* @param g
+* @param b
+* @param a
+* @return r
+* @return distancia         */
 function superFuncion(luz) {
     var canvas = document.getElementById("myCanvas2");
     var ctx = canvas.getContext("2d");
@@ -128,10 +134,13 @@ function superFuncion(luz) {
 
 
 /*
--Funcion "circulos", se encarga de graficar los dos unicos circulos que aparecen en el canvas, de color azul y rojo
- respectivamente con el fin de representar la polaridad de las cargas.
--Las variables que se utilizan son cargaP y cargaN.
--Declaramos para ambas cargas a traves de ctx.arc un radio y un angulo para que posean una forma circular.         */
+* Se encarga de graficar los dos unicos circulos que aparecen en el canvas, de color azul y rojo
+respectivamente con el fin de representar la polaridad de las cargas. Declaramos para ambas cargas
+a traves de ctx.arc un radio y un angulo para que posean una forma circular.
+* @method function circulos
+* @param cargaN
+* @param cargaP
+        */
 function circulos() {
     var canvas2 = document.getElementById("myCanvas2");
     var ctx = canvas2.getContext("2d")
@@ -153,12 +162,13 @@ function circulos() {
 
 
 /*
--Funcion grilla, dibuja la grilla sobre el canvas.
--Los bucles for crean las lineas verticales y horizontales generadas de acuerdo a las posiciones en X e Y en el canvas.
--Para que las lineas esten correctas y se vean adecuadamente se utiliza los parametos de medidas del canvas asignados
- previamente en el html.
--Al mismo se le asigna un color de fondo, en este caso negro y uno de las lineas que en este caso es un gris claro para que no sea tan fuerte y
-no permita vuisualizar las cargas.      */
+* Esta dibuja la grilla sobre el canvas. Los bucles for crean las lineas verticales y horizontales
+generadas de acuerdo a las posiciones en X e Y en el canvas. Para que las lineas esten correctas y
+se vean adecuadamente se utiliza los parametos de medidas del canvas asignados previamente en el html.
+Al mismo se le asigna un color de fondo, en este caso negro y uno de las lineas que en este caso es un
+gris claro para que no sea tan fuerte y no permita vuisualizar las cargas.
+* @method dunction grilla
+* @param i  */
 function grilla() {
     var canvas = document.getElementById("myCanvas2");
     var ctx = canvas.getContext("2d");

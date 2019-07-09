@@ -76,3 +76,9 @@ table, tr, td, th{
     text-decoration: underline;
     font-size: 27px; }
 
+
+/*Link para regrasar a index */
+.link{
+    text-decoration: none;
+    color: black;
+}

@@ -15,7 +15,7 @@ div{
     text-decoration: underline;
     font-size: 47px; }
 .uno img{
-    width: 470px;
+    width: 1000px;
     height: 470px; }
 
 /*Opciones de Uso*/
@@ -41,3 +41,8 @@ div{
     color: #6D0505;
     text-decoration: underline;
     font-size: 25px; }
+
+.link{
+    text-decoration: none;
+    color: black;
+}
