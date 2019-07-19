@@ -161,7 +161,7 @@ a.dos:hover, a:active {
 
 .cargas {
     position: fixed;
-    top: 735px;
+    bottom: 100px;
     width: 290px;
     height:55px;
     border: 7px solid #fffafa;
